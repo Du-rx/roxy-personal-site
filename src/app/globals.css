@@ -1,0 +1,47 @@
+@import "tailwindcss";
+
+@theme {
+  /* Warm off-white background */
+  --color-cream: #f7f1e8;
+  /* Dark charcoal text */
+  --color-charcoal: #2b2520;
+  /* Warm secondary text */
+  --color-soft: #8a7b6c;
+  /* Warm orange / red-orange accent */
+  --color-ember: #d4502a;
+  /* Muted travel blue */
+  --color-travel: #5b7a99;
+
+  --font-sans:
+    ui-sans-serif,
+    system-ui,
+    -apple-system,
+    "Segoe UI",
+    Roboto,
+    "Helvetica Neue",
+    Arial,
+    "PingFang SC",
+    "Microsoft YaHei",
+    sans-serif;
+
+  --font-serif:
+    "Iowan Old Style",
+    "Palatino Linotype",
+    Palatino,
+    Georgia,
+    "Times New Roman",
+    "Songti SC",
+    SimSun,
+    serif;
+}
+
+body {
+  background-color: var(--color-cream);
+  color: var(--color-charcoal);
+  font-family: var(--font-sans);
+}
+
+::selection {
+  background-color: var(--color-ember);
+  color: var(--color-cream);
+}
